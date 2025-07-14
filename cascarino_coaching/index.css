@@ -1,0 +1,152 @@
+/* Header */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.menu:hover {
+    color:  #231f20;
+}
+
+.logo-container {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    opacity: 100%;
+}
+
+
+header {
+    background-color: #d31f3e;
+    opacity: 90%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Body */
+body {
+    background-color: #231f20;
+}
+
+.contact-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    width: 100%;
+    height: 75vh;
+    
+}
+
+#typeLogo {
+    width: 250px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.submitSmall {
+    width: 450px;
+    height: 30px;
+    margin: 10px;
+    outline-color: #d31f3e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.submitBig {
+    width: 450px;
+    height: 250px;
+    margin: 10px;
+    outline-color: #d31f3e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: start;
+}
+
+input::placeholder {
+    opacity: 0.7;
+}
+
+
+#submit {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px; 
+    background-color: #d31f3e;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: medium ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.mySlides {
+    position: relative;
+}
+  
+.active {
+    background-color:#d31f3e;
+}
+
+.counter {
+    position: absolute;
+    z-index: 1;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/*-------------------------------*/
+  

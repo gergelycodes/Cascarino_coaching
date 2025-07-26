@@ -1,0 +1,103 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #d31f3e;
+    max-width: 270px;
+    height: 325px;
+    max-height: 33vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.service-card > ul {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 2px;
+    width: 270px;
+    height: auto;
+}
+
+.service-card > ul >li {
+    line-height: 1.5;
+
+}
+
+.service-card > p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 270px;
+}
+
+
+#package-name {
+    font-size: x-large;
+    font-family: "Rubik Mono One", monospace;
+    color: white;
+}
+
+#package-surname {
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #231f20;
+}
+
+#package-price {
+    font-size: 2rem;
+    color: white;
+    font-family: "Rubik Mono One", monospace;;
+}
+
+#package-description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color:  #231f20;
+    margin: 0px 0px 5px 0px;
+}
+
+.card-button {
+    width: 180px;
+    height: 40px;
+    background-color: #d31f3e;
+    border: 2px solid #231f20;
+    border-radius: 5px;
+    color: #231f20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.card-button:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.service-explanation-one {
+    height: 480px;
+    background-color:transparent;
+}
+
+.service-explanation-two {
+    height: 480px;
+    background-color: #d31f3e;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascarino Coaching - Home</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link href="/cascarino_coaching/public/styles/styles.css" rel="stylesheet"/> 
+
+<header>   
+      <div class="button-container" >
+         <div class="menuButton">
+              <a href="/cascarino_coaching/public/index.html" class="menu">Home</a>
+           </div>
+           <div class="menuButton">
+               <a href="/cascarino_coaching/public/services.html" class="menu">Services</a>
+          </div>
+         <div class="logo-container" >
+             <img src="/cascarino_coaching/assets/images/Fox 2.png" class="logo"/>
+         </div>
+         <div class="menuButton">
+             <a href="/cascarino_coaching/public/clients.html" class="menu">Clients</a>
+         </div>
+         <div class="menuButton">
+            <a href="/cascarino_coaching/public/about.html" class="menu">About</a>
+        </div>   
+     </div>
+</header>
+</div>
+
+<body> 
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+            <img src="/cascarino_coaching/assets/images/Stock photos/1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="/cascarino_coaching/assets/images/Stock photos/2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="/cascarino_coaching/assets/images/Stock photos/3.png" style="width:100%">
+        </div>
+
+        <div style="text-align:center" class="counter">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    
+    </div>
+
+    
+
+    <div class="contact-container">
+        <img src="/cascarino_coaching/assets/images/Type.png" id="typeLogo">
+        <h4><i>Join a team of like-minded individuals...</i></h4>
+        <input class="submitSmall" name="name" placeholder="Full name"/>
+        <input class="submitSmall" name="number" placeholder="Phone number"/>
+        <input class="submitSmall" name="email" placeholder="Email address"/>
+        <input class="submitBig" name="enquiry" placeholder="How can I help?"/>
+        <button id="submit" name="submit">Submit</button>
+    </div>
+    
+   
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every (4)000 milliseconds
+    }
+    </script>
+
+
+</body>
+
+<footer>
+    <div id="socials">
+        <ul class="socials footer-links">
+            <li><a href=""><img src="/cascarino_coaching/assets/images/icons/Instagram.png" class="social-icons"/></a></li>
+            <li><a href=""><img src="/cascarino_coaching/assets/images/icons/Facebook.png" class="social-icons"/></a></li> 
+            <li><a href=""><img src="/cascarino_coaching/assets/images/icons/LinkedIn.png" class="social-icons"/></a></li>
+        </ul>
+    </div>
+    <div id="contact">
+        <P>Cascarino Coaching</P>
+        <P>07123456789</P>
+        <P>énergie Fitness Cheltenham</P>
+        <P>GL51 0WR</P>
+    </div>
+</footer>
+
+</html>

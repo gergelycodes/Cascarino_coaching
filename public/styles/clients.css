@@ -13,6 +13,7 @@ header {
     height: 50px;
     background-color: #d31f3e;
     z-index: 1;
+    border-radius: 25px;
 }
   
 .menu {
@@ -98,27 +99,27 @@ p {
 }
 
 .client-one {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/1.png");
+    background-image: url("/assets/images/Stock photos/1.png");
 }
 
 .client-two {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/2.png");
+    background-image: url("/assets/images/Stock photos/2.png");
 }
 
 .client-three {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/3.png");
+    background-image: url("/assets/images/Stock photos/3.png");
 }
 
 .client-four {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/3.png");
+    background-image: url("/assets/images/Stock photos/3.png");
 }
 
 .client-five {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/3.png");
+    background-image: url("/assets/images/Stock photos/3.png");
 }
 
 .client-six {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/3.png");
+    background-image: url("/assets/images/Stock photos/3.png");
 }
 /* Add a :hover class for all 6 clients to change to before image. */
 .client-hover {
@@ -137,7 +138,7 @@ p {
 }
 
 .client-hover:hover {
-    background-image: url("/cascarino_coaching/assets/images/Stock photos/3.png"); /* Take out eventually. */
+    background-image: url("/assets/images/Stock photos/3.png"); /* Take out eventually. */
     box-shadow: 0 0 10px #d31f3e;
     transform: scale(1.03);
 }
@@ -151,42 +152,56 @@ footer {
     background-color: #d31f3e;
     height: 120px;
     display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 50px;
-}
-
-footer > div > p {
-    color: #231f20;;
-    font-style: italic;
-    font-size: smaller;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .footer-links {
     list-style-type: none;
-    padding: 2px;
-}
-
-.footer-links > li > a {
-    color: #231f20;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.footer-links > li > a:hover {
-    color: white;
+    min-width: 166px;
 }
 
 .socials {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 300px;
+    padding: 0px;
 }
 
 .socials > li > a > img{
-    width: 30px;
+    width: 25px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+
+}
+#contact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    color: #231f20;
+    line-height: 0.4;
+    text-align: center;
+    width: 300px;
+}
+/* ------------- Responsiveness -------------------- */
+
+@media (max-width: 500px) {
+    #submit {
+        width: 460px;
+        transition: linear 0.5s;
+    }
 }
 
 /* ------------- Responsiveness -------------------- */
